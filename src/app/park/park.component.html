@@ -1,0 +1,129 @@
+
+<nz-layout [hidden]="park.hidden">
+        <!-- <nz-header>
+          <div class="logo">
+              <span style="padding-left: 30px">LOCATION</span>
+              <i nz-icon nzType="environment" nzTheme="fill" style="padding-left:10px "></i>
+          </div>
+          <ul nz-menu class="aaaa" nzTheme="dark" nzMode="horizontal">
+            <li class="ssss" nz-menu-item><span><i nz-icon nzType="car" nzTheme="outline"></i></span>停车场管理</li>
+            <li class="cccc" nz-menu-item nz-dropdown [nzDropdownMenu]="menu" [nzPlacement]="'bottomCenter'" ><span><i nz-icon nzType="line-chart" nzTheme="outline"></i></span>统计报表
+              <nz-dropdown-menu #menu="nzDropdownMenu" >
+                  <ul nz-menu>
+                      <li nz-menu-item><a [routerLink]="[ '/analysis-chart']">停车记录报表</a></li>
+                      <li nz-menu-item><a [routerLink]="[ '/park-lot-utilization']">使用率报表</a></li>
+                  </ul>
+                </nz-dropdown-menu>
+            </li>
+            <li class="ssss" nz-menu-item><span><i nz-icon nzType="wallet" nzTheme="outline"></i></span><a [routerLink]="[ '/stock']">库存管理</a></li>
+            <li class="ssss" nz-menu-item><span><i nz-icon nzType="safety-certificate" nzTheme="outline" ></i></span><a [routerLink]="[ '/accounts']">权限管理</a></li> 
+          </ul>
+          <div class="search">
+                
+                <nz-input-group [nzSuffix]="suffixIconSearch">
+                        <input type="text" nz-input placeholder="搜索地图蒙城和模组IMEI" />
+                </nz-input-group>
+                <ng-template #suffixIconSearch>
+                        <i nz-icon nzType="search"></i>
+                </ng-template>
+          </div>
+          <div class="user">
+                <ul>
+                  <li nz-dropdown [nzDropdownMenu]="user" [nzPlacement]="'bottomRight'">
+                  <span ><i nz-icon nzType="user" nzTheme="outline" style="font-size: 20px"></i></span>
+                  
+                    <nz-dropdown-menu #user="nzDropdownMenu" >
+                      <ul nz-menu nzSelectable>
+                          <li nz-menu-item (click)="showModal()">
+                            <a>用户信息</a>
+                            <nz-modal
+                              [(nzVisible)]="isVisible"
+                              [nzTitle]="modalTitle"
+                              [nzContent]="modalContent"
+                              [nzFooter]="modalFooter"
+                              (nzOnCancel)="handleCancel()"
+                              
+                            >
+                              <ng-template #modalTitle>
+                                个人信息
+                              </ng-template>
+
+                              <ng-template #modalContent >
+                                <div class="username">
+                                  <ul>
+                                    <li>基本信息</li>
+                                    <li>安全和绑定</li>
+                                  </ul>
+                                </div>
+                              </ng-template>
+                            </nz-modal>
+                          </li>
+                          <li nz-menu-item><a [routerLink]="[ '/login']">退出</a></li>
+                      </ul>
+                    </nz-dropdown-menu>
+                  </li> 
+                </ul>
+          </div>
+        </nz-header> -->
+        
+        <nz-content>
+            
+          <div class="inner-content">
+            <header>
+              <span><a [routerLink]="[ '/park/create']" (click)="newpark()">新建停车场</a></span>
+            </header>
+            <nz-table
+                #borderedTable
+                nzBordered
+                #rowSelectionTable
+                [nzTotal] = 'park.total'
+                [nzPageIndex] = 'park.pageIndex'
+                [nzPageSize] = 'park.pageSize'
+                [nzShowSizeChanger] = "true"
+                [nzData]="park.newlist"
+                class="table"
+                >
+                <thead>
+                    <tr> 
+                    <th nzAlign='center' style="font-weight: 1000;">序号</th>
+                    <th nzAlign='center' style="font-weight: 1000">停车场名</th>
+                    <th nzAlign='center' style="font-weight: 1000">区域数</th>
+                    <th nzAlign='center' style="font-weight: 1000">地址</th>
+                    <th nzAlign='center' style="font-weight: 1000">车位数量</th>
+                    <th nzAlign='center' style="font-weight: 1000">占用车位</th>
+                    <th nzAlign='center' style="font-weight: 1000">空闲车位</th>
+                    <th nzAlign='center' style="font-weight: 1000">车场状态</th>
+                    <th nzAlign='center' style="font-weight: 1000">车场负责人</th>
+                    <th nzAlign='center' style="font-weight: 1000">负责人电话</th>
+                    <th nzAlign='center' style="font-weight: 1000">操作</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr *ngFor="let data of rowSelectionTable.data;let i = index">
+                    <td nzAlign='center'>{{ i + 1 }}</td>
+                    <td nzAlign='center'>{{ data.name }}</td>
+                    <td nzAlign='center'>{{ data.number }}</td>
+                    <td nzAlign='center'>{{ data.address }}</td>
+                    <td nzAlign='center'>{{ data.carnumber }}</td>
+                    <td nzAlign='center'>{{ data.takeupparkingSpaces }}</td>
+                    <td nzAlign='center'>{{ data.freeparking }}</td>
+                    <td nzAlign='center'>{{ data.yardcondition }}</td>
+                    <td nzAlign='center'>{{ data.principal }}</td>
+                    <td nzAlign='center'>{{ data.phonenumber }}</td>
+                    <td nzAlign='center'>
+                    <ul class="delate">
+                      <li nzTitle="查看地图" nz-tooltip><a class="purple"><i nz-icon nzType="environment" nzTheme="outline" style="font-size: 18px"></i></a></li>
+                      <li nzTitle="管理" nz-tooltip><a class="orange"><i nz-icon nzType="appstore" nzTheme="outline" style="font-size: 18px"></i></a></li>
+                      <li nzTitle="删除" nz-tooltip (click)="park.delete(i)"><a class="red"><i nz-icon nzType="rest" nzTheme="outline" style="font-size: 18px"></i></a></li>
+                    </ul>
+                        
+                    </tr>
+                </tbody>
+            </nz-table>
+          </div>
+        </nz-content>
+        
+</nz-layout>
+
+<router-outlet></router-outlet>

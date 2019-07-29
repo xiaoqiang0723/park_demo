@@ -1,0 +1,100 @@
+.ant-layout-header{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+}
+.ant-menu-horizontal{
+    background-color: #30b6cb;
+}
+
+.logo {
+    /* width: 120px;
+    height: 31px; */
+    font-size: 20px;
+    /* background: rgba(255, 255, 255, 0.2); */
+    /* margin: 16px 24px 16px 0; */
+    float: left;
+    color: #fff;
+  }
+
+  .aaaa {
+    padding-left:350px;
+    line-height: 40px;
+    color:#fff;
+    font-size: 18px;
+  }
+  .cccc{
+    text-align: center;
+      width: 160px;
+  }
+  .ssss{
+      text-align: center;
+      width: 160px;
+  }
+  [nz-menu] li span{
+      height: 20px;
+      display: block;
+      text-align: center;
+  }
+  .search{
+      float: right;
+      position: absolute;
+      right: 150px;
+      bottom: 0;
+      top: 2px;
+  }
+ 
+  .ant-input{
+      width: 320px;
+      height: 40px;
+  }
+  .user{
+    float: right;
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    top: 0;
+    color: #fff
+  }
+  .user ul li {
+    list-style: none;
+    float: right;
+    width: 150px;
+    text-align: center;
+  }
+  /* nz-breadcrumb {
+    margin: 16px 0;
+  } */
+
+  nz-content {
+    padding: 110px 30px 10px 30px;
+  }
+
+  /* nz-footer {
+    text-align: center;
+  } */
+
+  .inner-content {
+    background: #fff;
+    padding: 24px;
+    /* min-height: 500px; */
+    height: 620px
+  }
+  .inner-content header{
+    height: 60px;
+    border-bottom: 1px solid #ccc;
+  }
+  header button{
+    width: 120px;
+    height: 38px;
+    float: right;
+    color: #fff;
+    background-color: #6ebb4b;
+    border: 1px solid #6ebb4b;
+}
+.ant-table-thead>tr>th{
+    font-weight: 1000;
+    
+}

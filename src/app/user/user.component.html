@@ -1,0 +1,42 @@
+<div class="usermask" [hidden]="park.flag" (click)="hiddenuser()">
+    
+</div>
+
+<div class="usercenter">
+    <div class="headermin">
+        <p>个人信息</p>
+        <!-- <button nz-button nzType="default">X</button> -->
+    </div>
+    <div class="details">
+            <nz-tabset [nzTabPosition]="position" [nzType]="'line'">
+                <nz-tab  [nzTitle]="'基本信息' " class="xinxi"> 
+                    <div class="basic">
+                        <div class="basiccon">
+                                <form nz-form [nzLayout]="'inline'" [formGroup]="validateForm" (ngSubmit)="submitForm()">
+                                        <nz-form-item class="username1">
+                                          <nz-form-control nzErrorTip="请输入用户名">
+                                             <p>姓名：<input formControlName="userName"/></p>
+                                          </nz-form-control>
+                                        </nz-form-item>
+                                        <nz-form-item class="save">
+                                          <nz-form-control>
+                                            <P>手机号：135xxxxxxxxx</P>
+                                            <button nz-button nzType="default" (click)="hiddenuser()">取消</button>
+                                            <button nz-button nzType="primary" [disabled]="!validateForm.valid" (click)="hiddenuser()">保存</button>
+                                          </nz-form-control>
+                                        </nz-form-item>
+                                </form>
+                        </div>
+                    </div>
+                </nz-tab>
+                <nz-tab  [nzTitle]="'安全和绑定 ' " class="bangding">  
+                    <div class="security">
+                        <div class="securitycon">
+                        <span>密码：&nbsp;&nbsp;*&nbsp;*&nbsp;*&nbsp;*&nbsp;*</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button type="button" class="btn">修改密码</button>
+                        </div>
+                    </div>
+                </nz-tab>
+            </nz-tabset>
+    </div>
+</div>

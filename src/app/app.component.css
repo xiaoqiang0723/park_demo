@@ -1,0 +1,82 @@
+.ant-layout-header{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+  }
+  .ant-menu-horizontal{
+    background-color: #30b6cb;
+  }
+  
+  .logo {
+    font-size: 20px;
+    float: left;
+    color: #fff;
+  }
+  
+  .aaaa {
+    padding-left:350px;
+    line-height: 40px;
+    color:#fff;
+    font-size: 18px;
+  }
+  .cccc{
+    text-align: center;
+      width: 160px;
+  }
+  .ssss{
+      text-align: center;
+      width: 160px;
+  }
+  [nz-menu] li span{
+      height: 20px;
+      display: block;
+      text-align: center;
+  }
+  .search{
+      float: right;
+      position: absolute;
+      right: 150px;
+      bottom: 0;
+      top: 2px;
+  }
+  
+  .ant-input{
+      width: 320px;
+      height: 40px;
+  }
+  .user{
+    float: right;
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    top: 0;
+    color: #fff
+  }
+  
+  .user ul li {
+    list-style: none;
+    float: right;
+    width: 150px;
+    text-align: center;
+  }
+  .user1{
+    width: 500px;
+    height: 500px;
+  }
+  .username{
+    float: left;
+    width: 150px
+  }
+  /* .inner{
+    position: fixed;
+    width: 100%;
+    height: 750px;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, .5);
+  } */
+  /* 蒙版 */
+
+

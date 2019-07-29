@@ -1,0 +1,136 @@
+.ant-layout-header{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+  }
+  .ant-menu-horizontal{
+    background-color: #30b6cb;
+  }
+  
+  .logo {
+    font-size: 20px;
+    float: left;
+    color: #fff;
+  }
+  
+  .aaaa {
+    padding-left:350px;
+    line-height: 40px;
+    color:#fff;
+    font-size: 18px;
+  }
+  .cccc{
+    text-align: center;
+      width: 160px;
+  }
+  .ssss{
+      text-align: center;
+      width: 160px;
+  }
+  [nz-menu] li span{
+      height: 20px;
+      display: block;
+      text-align: center;
+  }
+  .search{
+      float: right;
+      position: absolute;
+      right: 150px;
+      bottom: 0;
+      top: 2px;
+  }
+  
+  .ant-input{
+      width: 320px;
+      height: 40px;
+  }
+  .user{
+    float: right;
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    top: 0;
+    color: #fff
+  }
+  
+  .user ul li {
+    list-style: none;
+    float: right;
+    width: 150px;
+    text-align: center;
+  }
+  .user1{
+    width: 500px;
+    height: 500px;
+  }
+  .username{
+    float: left;
+    width: 150px
+  }
+  nz-content {
+    padding: 110px 30px 10px 30px;
+  }
+  .inner-content {
+    background: #fff;
+    padding: 24px;
+    height: 630px;
+    width: 100%;
+    box-shadow: 1px 0 1px rgba(0,0,0,.21);
+  }
+  header{
+    height: 50px;
+  }
+  /* header span{
+    width: 140px;
+    height: 38px;
+    float: right;
+    text-align: center;
+    line-height: 38px;
+    background-color: #6ebb4b;
+    border: 1px solid #6ebb4b;
+  } */
+  header span a {
+    color: #fff;
+  }
+  .delate li{
+    float: left;
+  }
+  .delate li a{
+    display: block;
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    margin-left: 15px;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 60%; 
+  }
+  .delate li .red{
+    background-color: #db4b3a;
+  }
+  .delate li .purple{
+    background-color:#9b52d8;
+  }
+  .delate li .orange{
+    background-color:#f39c14;
+  }
+  .steps-content {
+    margin-top: 16px;
+    border: 1px dashed #e9e9e9;
+    border-radius: 6px;
+    background-color: #fafafa;
+    min-height: 500px;
+    text-align: center;
+    padding-top: 80px;
+  }
+
+  .steps-action {
+    float: right;
+    
+  }
+
+  button {
+    margin-right: 8px;
+  }  

@@ -1,0 +1,73 @@
+.usermask{
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    z-index: 1001;
+    position: fixed;
+    background-color: rgba(0, 0, 0,.2);
+}
+.usercenter{
+    position: absolute;
+    width: 700px;
+    height: 400px;
+    left: 50%;
+    top: 50%;
+    margin-left: -350px;
+    margin-top: -200px;
+    background-color: #fff;
+    z-index: 1002;
+}
+
+.headermin{
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+}
+.header p{
+    display: inline-block;
+}
+.header button{
+    float: right;
+    width: 50px;
+    height: 48px;
+    background-color: #fff;
+    border: none;
+}
+.details{
+    height: 350px;
+    
+}
+.basic{
+    width: 500px;
+    height: 300px;  
+}
+.basiccon{
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 50px
+}
+.security{
+    width: 500px;
+    height: 300px;  
+}
+.username1 input{
+    width: 200px;
+    height: 25px;
+}
+.save{
+    display: block;
+}
+.save button{
+    width: 100px;
+    margin-left:20px; 
+}
+.securitycon{
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.security .btn{
+    display: inline-block;
+}

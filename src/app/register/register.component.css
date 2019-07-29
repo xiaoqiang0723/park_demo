@@ -1,0 +1,70 @@
+
+
+.register{
+    width: 100%;
+    height: 100%;
+    color:rgba(0,0,0,.65);
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5;
+    background-color:#ccc;
+    position: relative;
+    text-align: center;
+  }
+
+span{
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    background-color: #545f6e;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+input{
+    height: 45px;
+    width: 340px
+    
+}
+.login-form {
+    position: absolute;
+    max-width: 400px;
+    height: 533px;
+    background-color: #fff;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+.item{
+    margin-left: 30px
+}
+.yanzhengma{
+  position: relative
+}
+.getphone{
+  bottom: 10%;
+  right: 10%;
+  position: absolute;
+  float: right;
+  width: 90px;
+  height: 35px;
+  color: #332d32;
+  background-color: #d4d4d4;
+  z-index: 1000;
+  display: inline-block;
+  border-radius: 5px;
+  border: 6;
+}
+
+.login-form-button {
+    width: 50%;
+    margin: 0 auto;
+    top: 20px;
+  }
+.a_link{
+    display: block;
+    padding-top: 20px;
+}

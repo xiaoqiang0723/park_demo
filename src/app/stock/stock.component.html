@@ -1,0 +1,73 @@
+<nz-layout>
+    <!-- <nz-header>
+        <div class="logo">
+            <span style="padding-left: 30px">LOCATION</span>
+            <i nz-icon nzType="environment" nzTheme="fill" style="padding-left:10px "></i>
+        </div>
+        <ul nz-menu class="aaaa" nzTheme="dark" nzMode="horizontal">
+          <li class="ssss" nz-menu-item><span><i nz-icon nzType="car" nzTheme="outline"></i></span><a [routerLink]="[ '/park']">停车场管理</a></li>
+          <li class="cccc" nz-menu-item nz-dropdown [nzDropdownMenu]="menu" [nzPlacement]="'bottomCenter'" ><span><i nz-icon nzType="line-chart" nzTheme="outline"></i></span>统计报表
+            <nz-dropdown-menu #menu="nzDropdownMenu" >
+                <ul nz-menu>
+                    <li nz-menu-item><a [routerLink]="[ '/analysis-chart']">停车记录报表</a></li>
+                      <li nz-menu-item><a [routerLink]="[ '/park-lot-utilization']">使用率报表</a></li>
+                </ul>
+              </nz-dropdown-menu>
+          </li>
+          
+              
+            
+          <li class="ssss" nz-menu-item><span><i nz-icon nzType="wallet" nzTheme="outline"></i></span><a [routerLink]="[ '/stock']">库存管理</a></li>
+          <li class="ssss" nz-menu-item><span><i nz-icon nzType="safety-certificate" nzTheme="outline" ></i></span><a [routerLink]="[ '/accounts']">权限管理</a></li> 
+        </ul>
+        <div class="search">
+              
+              <nz-input-group [nzSuffix]="suffixIconSearch">
+                      <input type="text" nz-input placeholder="搜索地图蒙城和模组IMEI" />
+              </nz-input-group>
+              <ng-template #suffixIconSearch>
+                      <i nz-icon nzType="search"></i>
+              </ng-template>
+        </div>
+       
+        <div class="user">
+            <ul>
+                <li nz-dropdown [nzDropdownMenu]="user" [nzPlacement]="'bottomRight'">
+                <span ><i nz-icon nzType="user" nzTheme="outline" style="font-size: 20px"></i></span>
+                
+                  <nz-dropdown-menu #user="nzDropdownMenu" >
+                    <ul nz-menu nzSelectable>
+                        <li nz-menu-item><a>用户信息</a></li>
+                        <li nz-menu-item><a [routerLink]="[ '/login']">退出</a></li>
+                    </ul>
+                  </nz-dropdown-menu>
+                </li> 
+              </ul>
+        </div>
+      </nz-header> -->
+        
+        <nz-content>
+          <!-- <nz-breadcrumb>
+            <nz-breadcrumb-item>Home</nz-breadcrumb-item>
+            <nz-breadcrumb-item>List</nz-breadcrumb-item>
+            <nz-breadcrumb-item>App</nz-breadcrumb-item>
+          </nz-breadcrumb> -->
+          <div class="inner-content">
+            <header>
+                <div class="left">
+                    <span>模组IMEI:&nbsp;&nbsp;&nbsp;
+                        <input>&nbsp;&nbsp;&nbsp;
+                        <button>查询</button>
+                    </span>
+                </div>
+                <div class="right">
+                <button type="button">添加设备</button>
+                <button nz-button nzType="default" type="button" style="margin-right: 20px;background-color: #ccc;border: none;" disabled>分配设备</button>
+                </div>
+            </header>
+            
+         </div>
+        </nz-content>
+        
+        
+      </nz-layout>
